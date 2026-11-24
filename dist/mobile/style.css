@@ -98,7 +98,7 @@ body{background-color:#030408;background-image:none}.prologue{background:#030408
 #poetry-app.galaxy-mode .atlas-tools{display:none!important}
 
 @media(max-width:700px),(max-height:500px) and (orientation:landscape){
- .star-tabs{position:fixed;top:calc(24px + env(safe-area-inset-top, 0px));left:50%;right:auto;transform:translateX(-50%);gap:8px;z-index:10}
+ .star-tabs{position:fixed;top:auto;bottom:calc(58px + env(safe-area-inset-bottom, 0px));left:50%;right:auto;transform:translateX(-50%);gap:8px;z-index:10}
  .star-tabs button{min-height:44px;padding:10px 5px;font-size:12px;letter-spacing:1px;white-space:nowrap}
  .star-tabs #collection-tab{color:#b9c4cd}
  .galaxy-mode .atlas-heading{top:calc(82px + env(safe-area-inset-top, 0px))}
