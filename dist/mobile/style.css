@@ -79,7 +79,7 @@ body{background-color:#030408;background-image:none}.prologue{background:#030408
  #detail .close-detail{min-width:44px;min-height:44px;top:0;margin:-6px -4px 0 8px;font-size:28px;border-radius:50%;background:#152b3bf5}
  #detail .kicker{padding-top:6px}#detail .verse{padding:18px 0}#detail .verse h2{font-size:21px}#detail .full{font-size:14px}#detail summary{min-height:42px;padding:10px 0;line-height:1.6}
  #detail .actions{flex-wrap:wrap}#detail .actions button,#detail .imagery-return{min-height:44px}#detail .related{min-height:60px}#detail .related p{font-size:16px}
- .imagery-intro{top:74px}
+ .imagery-intro{top:calc(74px + env(safe-area-inset-top, 0px))}
  #imagery-names,.imagery-reading #imagery-names{left:50%;top:51%;width:94vw;height:94vw}
  .site-credits{bottom:8px;right:12px;font-size:8px;max-width:94vw}
  #skip-entrance{top:10px;right:12px;min-height:44px;padding:10px 8px}
@@ -98,11 +98,11 @@ body{background-color:#030408;background-image:none}.prologue{background:#030408
 #poetry-app.galaxy-mode .atlas-tools{display:none!important}
 
 @media(max-width:700px),(max-height:500px) and (orientation:landscape){
- .star-tabs{position:fixed;top:12px;left:50%;right:auto;transform:translateX(-50%);gap:8px;z-index:10}
+ .star-tabs{position:fixed;top:calc(24px + env(safe-area-inset-top, 0px));left:50%;right:auto;transform:translateX(-50%);gap:8px;z-index:10}
  .star-tabs button{min-height:44px;padding:10px 5px;font-size:12px;letter-spacing:1px;white-space:nowrap}
  .star-tabs #collection-tab{color:#b9c4cd}
- .galaxy-mode .atlas-heading{top:82px}
- .imagery-intro{top:74px}
+ .galaxy-mode .atlas-heading{top:calc(82px + env(safe-area-inset-top, 0px))}
+ .imagery-intro{top:calc(74px + env(safe-area-inset-top, 0px))}
  #imagery-back{top:110px;left:20px;right:auto;min-height:44px}
  #poetry-app.galaxy-mode #detail.open,#poetry-app.galaxy-mode.imagery-reading #detail.open{
   position:fixed;inset:0;width:100%;height:100dvh;max-height:none;box-sizing:border-box;border:0;border-radius:0;
