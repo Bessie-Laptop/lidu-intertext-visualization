@@ -137,3 +137,12 @@ body{background-color:#030408;background-image:none}.prologue{background:#030408
 @media(prefers-reduced-motion:reduce){.explore-guide[open],.explore-guide[open]::backdrop{animation:none}}
 
 body:has(#poem-entrance:not([hidden])) .explore-guide::backdrop{background:#081624ad;backdrop-filter:blur(7px)}.explore-guide::backdrop{transition:background 1s ease,backdrop-filter 1s ease}
+
+@media (max-width: 700px) and (orientation: portrait) {
+  #poetry-app {
+    --mobile-header-top: max(68px, calc(env(safe-area-inset-top, 0px) + 8px));
+  }
+  #poetry-app .star-tabs { top: var(--mobile-header-top); }
+  #poetry-app.galaxy-mode .atlas-heading { top: calc(var(--mobile-header-top) + 70px); }
+  #poetry-app .imagery-intro { top: calc(var(--mobile-header-top) + 62px); }
+}
