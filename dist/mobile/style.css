@@ -144,7 +144,4 @@ body:has(#poem-entrance:not([hidden])) .explore-guide::backdrop{background:#0816
     bottom: calc(8px + env(safe-area-inset-bottom, 0px));
     max-width: calc(100vw - 100px);
   }
-  .guide-reopen {
-    bottom: calc(58px + env(safe-area-inset-bottom, 0px));
-  }
 }
