@@ -100,7 +100,7 @@ body{background-color:#030408;background-image:none}.prologue{background:#030408
 @media(max-width:700px),(max-height:500px) and (orientation:landscape){
  .star-tabs{position:fixed;top:auto;bottom:calc(58px + env(safe-area-inset-bottom, 0px));left:50%;right:auto;transform:translateX(-50%);gap:8px;z-index:10}
  .star-tabs button{min-height:44px;padding:10px 5px;font-size:12px;letter-spacing:1px;white-space:nowrap}
- .collection-nav{position:fixed;top:auto;right:auto;left:max(12px, env(safe-area-inset-left, 0px));bottom:calc(58px + env(safe-area-inset-bottom, 0px));z-index:10}
+ .collection-nav{position:fixed;top:auto;right:auto;left:max(12px, env(safe-area-inset-left, 0px));bottom:calc(env(safe-area-inset-bottom, 0px));z-index:10}
  .collection-nav button{min-height:44px;padding:10px 5px;font-size:12px;letter-spacing:1px;white-space:nowrap;color:#b9c4cd}
  .galaxy-mode .atlas-heading{top:calc(82px + env(safe-area-inset-top, 0px))}
  .imagery-intro{top:calc(74px + env(safe-area-inset-top, 0px))}
@@ -138,3 +138,13 @@ body{background-color:#030408;background-image:none}.prologue{background:#030408
 @media(prefers-reduced-motion:reduce){.explore-guide[open],.explore-guide[open]::backdrop{animation:none}}
 
 body:has(#poem-entrance:not([hidden])) .explore-guide::backdrop{background:#081624ad;backdrop-filter:blur(7px)}.explore-guide::backdrop{transition:background 1s ease,backdrop-filter 1s ease}
+
+@media (max-width: 700px), (max-height: 500px) and (orientation: landscape) {
+  .site-credits {
+    bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+    max-width: calc(100vw - 100px);
+  }
+  .guide-reopen {
+    bottom: calc(58px + env(safe-area-inset-bottom, 0px));
+  }
+}
